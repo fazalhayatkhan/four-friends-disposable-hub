@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="The 4 Friends Disposable Hub, Baghderai Chowk, Madyan Road. Wholesale and retail disposable items. Order on WhatsApp.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%2314306B%27/%3E%3Ctext x=%2732%27 y=%2742%27 font-size=%2730%27 font-weight=%27800%27 text-anchor=%27middle%27 fill=%27white%27 font-family=%27Arial%27%3E4F%3C/text%3E%3C/svg%3E">
+<title>The 4 Friends Disposable Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F7F6; --surface:#FFFFFF; --ink:#0E2A2B; --muted:#52706E; --line:#D5E3E1;
+  --teal:#0B8A7F; --teal-d:#086B62; --on-teal:#FFFFFF; --tint:#E1F2EF;
+  --navy:#14306B; --on-navy:#FFFFFF; --navy-muted:#B9C7E8;
+  --red:#D9363E; --wa:#168A45; --on-wa:#FFFFFF;
+  --c-food:#0B8A7F; --c-cups:#2B5FC7; --c-bags:#B7711F; --c-hyg:#2E8B57; --c-party:#7A57C9;
+  --font-d:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;
+  --font-b:'Figtree','Segoe UI',system-ui,sans-serif;
+  --shadow:0 1px 2px rgba(14,42,43,.06),0 8px 24px rgba(14,42,43,.06);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0A1617; --surface:#112326; --ink:#E6F1F0; --muted:#93AFAC; --line:#22393B;
+    --teal:#2CC4B4; --teal-d:#4FD6C8; --on-teal:#04201D; --tint:#12302F;
+    --navy:#0F2552; --on-navy:#FFFFFF; --navy-muted:#A9B9E0;
+    --red:#F0636A; --wa:#1C9E52; --on-wa:#FFFFFF;
+    --c-food:#2CC4B4; --c-cups:#7FA6F5; --c-bags:#E2A152; --c-hyg:#5CC98B; --c-party:#B197F0;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.3);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0A1617; --surface:#112326; --ink:#E6F1F0; --muted:#93AFAC; --line:#22393B;
+  --teal:#2CC4B4; --teal-d:#4FD6C8; --on-teal:#04201D; --tint:#12302F;
+  --navy:#0F2552; --on-navy:#FFFFFF; --navy-muted:#A9B9E0;
+  --red:#F0636A; --wa:#1C9E52; --on-wa:#FFFFFF;
+  --c-food:#2CC4B4; --c-cups:#7FA6F5; --c-bags:#E2A152; --c-hyg:#5CC98B; --c-party:#B197F0;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.3);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-b);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+.wrap{max-width:1180px;margin-inline:auto;padding-inline:16px}
+.ico{width:1.2em;height:1.2em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.ico.fill{fill:currentColor;stroke:none}
+.top{position:sticky;top:0;z-index:30;background:var(--surface);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:12px;padding-block:10px}
+.brand{display:flex;align-items:center;gap:10px;min-width:0}
+.mark{width:42px;height:42px;border-radius:10px;background:var(--navy);color:var(--on-navy);display:flex;align-items:center;justify-content:center;font-family:var(--font-d);font-weight:800;font-size:19px;letter-spacing:-.02em;flex:none}
+.mark b{color:#FF7A80;font-weight:800}
+.bname{font-family:var(--font-d);font-weight:800;font-size:18px;line-height:1;letter-spacing:.01em;white-space:nowrap}
+.bname i{font-style:normal;color:var(--red);font-size:1.25em}
+.bsub{font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin-top:3px}
+.search{flex:1;position:relative;min-width:0;max-width:420px;margin-inline:auto}
+.search input{width:100%;padding:9px 14px 9px 38px;border-radius:999px;border:1px solid var(--line);background:var(--bg);font-size:14px}
+.search .ico{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--muted)}
+.hdr-actions{display:flex;gap:8px;margin-left:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:10px;padding:10px 16px;font-weight:700;font-size:14px;cursor:pointer;transition:background .15s,transform .1s}
+.btn:active{transform:scale(.98)}
+.btn-teal{background:var(--teal);color:var(--on-teal)}
+.btn-teal:hover{background:var(--teal-d)}
+.btn-wa{background:var(--wa);color:var(--on-wa)}
+.btn-wa:hover{filter:brightness(1.08)}
+.icon-btn{width:40px;height:40px;padding:0;border-radius:10px;background:var(--bg);border:1px solid var(--line);color:var(--ink);cursor:pointer;display:grid;place-items:center}
+.cart-btn{position:relative}
+.badge{background:var(--red);color:#fff;font-size:11px;font-weight:800;min-width:20px;height:20px;border-radius:10px;display:grid;place-items:center;padding-inline:5px;font-variant-numeric:tabular-nums}
+.ticker{background:var(--navy);color:var(--on-navy);font-size:13px}
+.ticker .wrap{display:flex;gap:6px 22px;flex-wrap:wrap;justify-content:center;padding-block:8px;font-weight:600}
+.ticker span{display:inline-flex;align-items:center;gap:7px}
+.hero{display:grid;grid-template-columns:1.25fr 1fr;gap:28px;padding-block:40px 28px;align-items:start}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}
+h1{font-family:var(--font-d);font-weight:800;font-size:clamp(32px,5.4vw,58px);line-height:1.02;letter-spacing:-.025em;margin:12px 0 14px;text-wrap:balance}
+h1 em{font-style:normal;color:var(--teal)}
+.lead{color:var(--muted);font-size:16px;max-width:54ch;margin:0 0 22px}
+.cta-row{display:flex;gap:10px;flex-wrap:wrap}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:28px;border-top:1px solid var(--line)}
+.facts div{padding:14px 12px 0 0}
+.facts strong{display:block;font-family:var(--font-d);font-size:26px;line-height:1.1;font-variant-numeric:tabular-nums}
+.facts span{font-size:12.5px;color:var(--muted)}
+.card-contact{background:var(--navy);color:var(--on-navy);border-radius:18px;padding:22px;box-shadow:var(--shadow)}
+.card-contact h2{font-family:var(--font-d);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--navy-muted);margin:0 0 10px;font-weight:600}
+.addr{display:flex;gap:10px;align-items:flex-start;font-size:16px;font-weight:600;margin-bottom:6px}
+.hours{display:flex;gap:10px;align-items:center;color:var(--navy-muted);font-size:14px;margin-bottom:20px}
+.person{display:flex;align-items:center;justify-content:space-between;gap:12px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:12px 14px;margin-top:10px;transition:background .15s}
+.person:hover{background:rgba(255,255,255,.15)}
+.person .who{min-width:0}
+.person small{display:block;color:var(--navy-muted);font-size:12px}
+.person strong{font-size:15px}
+.person .num{font-variant-numeric:tabular-nums;font-size:13px;color:#fff;opacity:.9;margin-top:2px;display:block}
+.person .go{width:38px;height:38px;border-radius:50%;background:var(--wa);color:var(--on-wa);display:grid;place-items:center;flex:none}
+.pay{margin-top:16px;font-size:13px;color:var(--navy-muted)}
+.cat-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px;padding-top:12px}
+h2.sec{font-family:var(--font-d);font-size:clamp(24px,3.4vw,34px);margin:0;letter-spacing:-.02em;font-weight:800}
+.sub{color:var(--muted);margin:2px 0 0;font-size:14px}
+.sortbox{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.sortbox select{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 10px;text-transform:none;letter-spacing:0;font-weight:500;font-size:14px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-block:16px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);font-weight:600;font-size:14px;cursor:pointer;white-space:nowrap}
+.chip:hover{border-color:var(--teal)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip .n{font-size:12px;opacity:.65;font-variant-numeric:tabular-nums}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.p{background:var(--surface);border:1px solid var(--line);border-radius:14px;display:flex;flex-direction:column;overflow:hidden;min-width:0}
+.p:hover{box-shadow:var(--shadow)}
+.tile{height:110px;display:grid;place-items:center;position:relative;color:var(--c);background:radial-gradient(circle at 20% 20%,color-mix(in srgb,var(--c) 22%,transparent),transparent 60%),color-mix(in srgb,var(--c) 10%,var(--surface))}
+.tile .ico{width:46px;height:46px;stroke-width:1.5}
+.p-body{padding:14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.p-unit{font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.p h3{font-size:15.5px;line-height:1.28;margin:0;font-weight:700}
+.p p{margin:0;font-size:13px;color:var(--muted);flex:1}
+.p-foot{display:flex;align-items:center;justify-content:space-between;gap:8px;padding-top:10px;border-top:1px solid var(--line);margin-top:6px}
+.step{display:inline-flex;align-items:center;border:1px solid var(--teal);border-radius:10px;overflow:hidden}
+.step button{width:32px;height:34px;border:0;background:var(--tint);color:var(--teal);font-weight:800;font-size:17px;cursor:pointer}
+.step button:hover{background:var(--teal);color:var(--on-teal)}
+.step output{min-width:30px;text-align:center;font-weight:700;font-variant-numeric:tabular-nums}
+.empty{text-align:center;padding:60px 16px;color:var(--muted)}
+.opt{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px;font-size:13px;font-weight:600}
+.ask{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:var(--wa);padding:6px 2px}
+.ask:hover{text-decoration:underline}
+.more{margin-top:22px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;background:var(--surface);border:1px dashed var(--teal);border-radius:14px;padding:16px 18px}
+.more strong{font-family:var(--font-d);font-size:19px}
+.more p{margin:2px 0 0;color:var(--muted);font-size:14px}
+.band{margin-block:44px;background:var(--tint);border:1px solid var(--line);border-radius:20px;padding:28px;display:grid;grid-template-columns:1.2fr 1fr;gap:28px}
+.band h2{font-family:var(--font-d);font-size:clamp(22px,3vw,30px);margin:6px 0 8px;line-height:1.1;letter-spacing:-.02em}
+.band p{color:var(--muted);margin:0}
+.form{display:grid;gap:10px}
+.form label{font-size:12px;font-weight:700;display:grid;gap:4px;color:var(--muted)}
+.form input,.form select,.form textarea{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:14px;color:var(--ink);width:100%}
+.form textarea{resize:vertical;min-height:70px}
+footer{background:var(--navy);color:var(--on-navy);margin-top:40px}
+.foot{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:28px;padding-block:36px}
+.foot h4{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--navy-muted);margin:0 0 10px}
+.foot p,.foot li{font-size:14px;margin:0 0 6px;color:#E8EEFB}
+.foot ul{list-style:none;padding:0;margin:0}
+.foot a:hover{text-decoration:underline}
+.copy{border-top:1px solid rgba(255,255,255,.15);padding-block:14px;font-size:12.5px;color:var(--navy-muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px}
+.scrim{position:fixed;inset:0;background:rgba(5,15,16,.55);z-index:40}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(440px,100%);background:var(--surface);z-index:41;display:flex;flex-direction:column;box-shadow:-10px 0 40px rgba(0,0,0,.25)}
+.d-head{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border-bottom:1px solid var(--line)}
+.d-head h3{margin:0;font-family:var(--font-d);font-size:20px}
+.d-body{flex:1;overflow:auto;padding:14px 16px;display:grid;gap:10px;align-content:start}
+.line{display:flex;gap:10px;align-items:center;justify-content:space-between;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--bg)}
+.line .nm{font-size:13.5px;font-weight:600;min-width:0}
+.line .nm small{display:block;font-weight:500;color:var(--muted);font-variant-numeric:tabular-nums}
+.d-foot{padding:14px 16px;border-top:1px solid var(--line);display:grid;gap:10px;background:var(--bg)}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.seg button{padding:8px;border-radius:10px;border:1px solid var(--line);background:var(--surface);font-weight:600;font-size:13px;cursor:pointer}
+.seg button[aria-pressed="true"]{border-color:var(--wa);background:color-mix(in srgb,var(--wa) 14%,var(--surface));color:var(--ink)}
+.disabled{opacity:.5;pointer-events:none}
+.fab{position:fixed;right:16px;bottom:16px;z-index:25;height:54px;padding:0 18px 0 16px;border-radius:27px;background:var(--wa);color:var(--on-wa);display:flex;align-items:center;gap:9px;font-weight:700;box-shadow:0 8px 24px rgba(0,0,0,.28)}
+.fab .ico{width:26px;height:26px}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:10px;font-size:13px;font-weight:600;z-index:60}
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr;padding-top:26px}
+  .band{grid-template-columns:1fr;padding:20px}
+  .search{order:5;flex-basis:100%;max-width:none}
+  .top .wrap{flex-wrap:wrap}
+  .bsub{display:none}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-food" viewBox="0 0 24 24"><path d="M3 9h18l-2 10.5H5L3 9z"/><path d="M7 9V6h10v3"/><path d="M9 13h6"/></symbol>
+  <symbol id="i-cups" viewBox="0 0 24 24"><path d="M6 4h12l-1.6 16H7.6L6 4z"/><path d="M6.4 9h11.2"/><path d="M13 4l2-2"/></symbol>
+  <symbol id="i-bags" viewBox="0 0 24 24"><path d="M5 8h14l1 12H4L5 8z"/><path d="M9 8V6.5a3 3 0 016 0V8"/></symbol>
+  <symbol id="i-hyg" viewBox="0 0 24 24"><path d="M4 11h16v8H4z"/><path d="M8 11c0-3 1.8-6 4-6s4 3 4 6"/><path d="M10 15h4"/></symbol>
+  <symbol id="i-party" viewBox="0 0 24 24"><path d="M4 20l5-12 7 7-12 5z"/><path d="M14 4l.8 2M18 7.5l2-.8M19 13l2 .8"/></symbol>
+  <symbol id="i-plate" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 3a9 9 0 00-7.8 13.5L3 21l4.6-1.2A9 9 0 1012 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 7.8c.4 2.8 2.6 5 5.6 6l1.3-1.4-2.1-1.1-.9.9c-.9-.4-1.8-1.3-2.2-2.2l.9-.9L10.5 7 9 7.8z" fill="currentColor"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2l2.5 10.5h10L19.5 7H7"/><circle cx="9.5" cy="19" r="1.2"/><circle cx="17" cy="19" r="1.2"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 019.5 4 8 8 0 1020 14.5z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 10-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M3 6h11v10H3zM14 9h4l3 3v4h-7"/><circle cx="7" cy="17.5" r="1.7"/><circle cx="17" cy="17.5" r="1.7"/></symbol>
+  <symbol id="i-print" viewBox="0 0 24 24"><path d="M7 9V4h10v5M7 17H4v-7h16v7h-3M7 14h10v6H7z"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <div class="mark">4<b>F</b></div>
+      <div><div class="bname">THE <i>4</i> FRIENDS</div><div class="bsub">Disposable Hub</div></div>
+    </a>
+    <label class="search">
+      <svg class="ico"><use href="#i-search"/></svg>
+      <input id="q" type="search" placeholder="Search containers, cups, plates, bagsâ¦" autocomplete="off">
+    </label>
+    <div class="hdr-actions">
+      <button class="icon-btn" id="theme" aria-label="Theme"><svg class="ico"><use href="#i-moon"/></svg></button>
+      <button class="btn btn-teal cart-btn" id="open-cart"><svg class="ico"><use href="#i-cart"/></svg><span>Order list</span><span class="badge" id="count">0</span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="wrap hero">
+  <div>
+    <div class="eyebrow"><svg class="ico"><use href="#i-pin"/></svg>Baghderai Chowk, Madyan Road</div>
+    <h1>Every disposable item for your shop or home. <em>One counter.</em></h1>
+    <p class="lead">Food containers, foam boxes, plates, cups, shopper bags, tissues and more. Pick what you need, send your list on WhatsApp, and we reply instantly with wholesale rates.</p>
+    <div class="cta-row">
+      <a class="btn btn-teal" href="#shop">Browse all items</a>
+      <a class="btn btn-wa" href="https://wa.me/923486099280" target="_blank" rel="noopener"><svg class="ico fill"><use href="#i-wa"/></svg>Chat on WhatsApp</a>
+    </div>
+  </div>
+  <aside class="card-contact">
+    <h2>Visit or order</h2>
+    <div class="addr"><svg class="ico"><use href="#i-pin"/></svg><span>Madyan Road, Main Bazar, Baghderai Chowk</span></div>
+    <div class="hours"><svg class="ico"><use href="#i-clock"/></svg>Mon to Sat, 8:00 AM to 9:00 PM</div>
+    <a class="person" href="https://wa.me/923486099280" target="_blank" rel="noopener">
+      <div class="who"><small>Proprietor</small><strong>Fazal Hayat</strong><span class="num">0348-6099280</span></div>
+      <span class="go"><svg class="ico fill"><use href="#i-wa"/></svg></span>
+    </a>
+    <a class="person" href="https://wa.me/923464604517" target="_blank" rel="noopener">
+      <div class="who"><small>Sales & Support</small><strong>Ishaq Khan</strong><span class="num">0346-4604517</span></div>
+      <span class="go"><svg class="ico fill"><use href="#i-wa"/></svg></span>
+    </a>
+  </aside>
+</section>
+
+<section class="wrap" id="shop">
+  <div class="cat-head">
+    <div><h2 class="sec">All disposable items</h2><p class="sub">Tap Add on items you need, then send your list on WhatsApp.</p></div>
+    <label class="sortbox">Sort
+      <select id="sort"><option value="feat">Shop order</option><option value="az">Name A to Z</option></select>
+    </label>
+  </div>
+  <div class="chips" id="chips"></div>
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" hidden><strong>No item matches that search.</strong></div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div><h4 class="bname" style="color:#fff">THE 4 FRIENDS</h4><p>Wholesale & Retail Disposable Hub.</p></div>
+    <div><h4>Contact</h4><p>Fazal Hayat: 0348-6099280<br>Ishaq Khan: 0346-4604517</p></div>
+    <div><h4>Location</h4><p>Madyan Road, Main Bazar, Baghderai Chowk</p></div>
+  </div>
+  <div class="wrap copy"><span>&copy; 2026 The 4 Friends Disposable Hub</span><span>@4FriendsDisposableHub</span></div>
+</footer>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" hidden>
+  <div class="d-head"><h3>Your order list</h3><button class="icon-btn" id="close-cart"><svg class="ico"><use href="#i-x"/></svg></button></div>
+  <div class="d-body" id="lines"></div>
+  <div class="d-foot">
+    <div class="form">
+      <label for="cn">Your name<input id="cn" type="text" placeholder="Name"></label>
+      <label for="cp">Phone<input id="cp" type="tel" placeholder="03XX XXXXXXX"></label>
+    </div>
+    <div class="seg" id="who"><button type="button" data-w="fazal" aria-pressed="true">Fazal Hayat</button><button type="button" data-w="ishaq" aria-pressed="false">Ishaq Khan</button></div>
+    <a class="btn btn-wa disabled" id="send" href="#" target="_blank" rel="noopener"><svg class="ico fill"><use href="#i-wa"/></svg>Send order on WhatsApp</a>
+  </div>
+</aside>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+var CATS=[
+ {id:'food',name:'Food containers & boxes',ico:'food',c:'--c-food'},
+ {id:'plates',name:'Plates & spoons',ico:'plate',c:'--c-party'},
+ {id:'cups',name:'Cups & glasses',ico:'cups',c:'--c-cups'},
+ {id:'bags',name:'Bags & rolls',ico:'bags',c:'--c-bags'},
+ {id:'hyg',name:'Tissue & hygiene',ico:'hyg',c:'--c-hyg'}
+];
+var P=[];
+function add(slug,name,cat,unit,desc){P.push({id:P.length+1,slug:slug,name:name,cat:cat,unit:unit,desc:desc})}
+['2000 ml','1500 ml','1000 ml','750 ml','500 ml','200 ml'].forEach(function(s){add('fc-'+s,'Food Container '+s,'food',s,'Disposable container, '+s+'.')});
+['Size 22','Size 19','Size 11','Size 9'].forEach(function(s){add('foam-'+s,'Foam Meal Box, '+s,'food',s,'Thermocol meal box for takeaway.')});
+['Large','Medium','Small'].forEach(function(s){add('plate-'+s,'Paper Plate, '+s,'plates',s,'Paper plate for parties.')});
+['Tea', 'Coffee'].forEach(function(n){add(n.toLowerCase()+'-cup',n+' Paper Cup','cups','Pack','Disposable '+n.toLowerCase()+' cup.')});
+add('shopper','Shopper Bags','bags','Bundle','Shopper bags for shops.');
+add('tissues','Tissues Box','hyg','Box','Facial and table tissues.');
+add('sufra','Table Sheet (Sufra)','hyg','Roll','Disposable dastarkhwan roll.');
+
+var WA={fazal:'923486099280',ishaq:'923464604517'};
+var $=function(s){return document.querySelector(s)};
+var state={cat:'all',q:'',sort:'feat',cart:{},who:'fazal'};
+var catBy={};CATS.forEach(function(c){catBy[c.id]=c});
+function pById(id){return P.find(function(x){return x.id===id})}
+
+function renderChips(){
+  var html='<button class="chip" data-c="all" aria-pressed="'+(state.cat==='all')+'">All items</button>';
+  CATS.forEach(function(c){html+='<button class="chip" data-c="'+c.id+'" aria-pressed="'+(state.cat===c.id)+'">'+c.name+'</button>'});
+  $('#chips').innerHTML=html;
+}
+function visible(){
+  var q=state.q.trim().toLowerCase();
+  return P.filter(function(p){
+    return (state.cat==='all'||p.cat===state.cat)&&(!q||(p.name+' '+p.desc).toLowerCase().indexOf(q)>-1);
+  });
+}
+function ctl(p){
+  var n=state.cart[p.id]||0;
+  var ask='https://wa.me/'+WA[state.who]+'?text='+encodeURIComponent('Hello, what is the price of '+p.name+'?');
+  var a='<a class="ask" href="'+ask+'" target="_blank" rel="noopener"><svg class="ico fill"><use href="#i-wa"/></svg>Ask price</a>';
+  if(!n)return a+'<button class="btn btn-teal add" data-add="'+p.id+'">Add</button>';
+  return a+'<div class="step"><button data-dec="'+p.id+'">&minus;</button><output>'+n+'</output><button data-inc="'+p.id+'">+</button></div>';
+}
+function renderGrid(){
+  var list=visible();
+  $('#empty').hidden=list.length>0;
+  $('#grid').innerHTML=list.map(function(p){
+    var c=catBy[p.cat];
+    return '<article class="p" style="--c:var('+c.c+')"><div class="tile"><svg class="ico"><use href="#i-'+c.ico+'"/></svg></div>'+
+      '<div class="p-body"><span class="p-unit">'+p.unit+'</span><h3>'+p.name+'</h3><p>'+p.desc+'</p>'+
+      '<div class="p-foot" data-ctl="'+p.id+'">'+ctl(p)+'</div></div></article>';
+  }).join('');
+}
+function refreshCtl(id){var p=pById(id),el=document.querySelector('[data-ctl="'+id+'"]');if(el&&p)el.innerHTML=ctl(p)}
+function change(id,d){
+  var n=(state.cart[id]||0)+d;
+  if(n<=0)delete state.cart[id];else state.cart[id]=n;
+  refreshCtl(id);renderCart();
+}
+function buildMsg(){
+  var m='*NEW ORDER - THE 4 FRIENDS DISPOSABLE HUB*\n\n';
+  var n=$('#cn').value.trim(),ph=$('#cp').value.trim();
+  if(n)m+='*Name:* '+n+'\n';if(ph)m+='*Phone:* '+ph+'\n';
+  m+='\n*Items:*\n';
+  Object.keys(state.cart).forEach(function(id){var p=pById(+id);m+='- '+p.name+' x '+state.cart[id]+'\n'});
+  m+='\nPlease confirm rates and delivery.';
+  return m;
+}
+function renderCart(){
+  var keys=Object.keys(state.cart);
+  $('#count').textContent=keys.reduce(function(s,k){return s+state.cart[k]},0);
+  $('#lines').innerHTML=keys.length?keys.map(function(k){
+    var p=pById(+k);
+    return '<div class="line"><div class="nm">'+p.name+'<small>'+p.unit+'</small></div>'+
+      '<div class="step"><button data-dec="'+p.id+'">&minus;</button><output>'+state.cart[k]+'</output><button data-inc="'+p.id+'">+</button></div></div>';
+  }).join(''):'<div class="empty">Your list is empty.</div>';
+  var a=$('#send');a.classList.toggle('disabled',!keys.length);
+  a.href=keys.length?'https://wa.me/'+WA[state.who]+'?text='+encodeURIComponent(buildMsg()):'#';
+}
+function openCart(open){$('#drawer').hidden=!open;$('#scrim').hidden=!open;if(open)renderCart()}
+
+document.addEventListener('click',function(e){
+  var el=e.target.closest('[data-add],[data-inc],[data-dec],[data-c],[data-w]');if(!el)return;
+  if(el.dataset.add)change(+el.dataset.add,1);
+  else if(el.dataset.inc)change(+el.dataset.inc,1);
+  else if(el.dataset.dec)change(+el.dataset.dec,-1);
+  else if(el.dataset.c){state.cat=el.dataset.c;renderChips();renderGrid()}
+  else if(el.dataset.w){state.who=el.dataset.w;document.querySelectorAll('#who button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.w===state.who)});renderGrid();renderCart()}
+});
+$('#q').addEventListener('input',function(e){state.q=e.target.value;renderGrid()});
+$('#open-cart').addEventListener('click',function(){openCart(true)});
+$('#close-cart').addEventListener('click',function(){openCart(false)});
+$('#scrim').addEventListener('click',function(){openCart(false)});
+$('#theme').addEventListener('click',function(){var r=document.documentElement;r.dataset.theme=r.dataset.theme==='dark'?'light':'dark'});
+
+renderChips();renderGrid();renderCart();
+</script>
+</body>
+</html>
