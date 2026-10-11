@@ -1,0 +1,8 @@
+{
+  "name": "the-4-friends-disposable-hub",
+  "version": "1.0.0",
+  "description": "The 4 Friends Disposable Hub Web App",
+  "scripts": {
+    "start": "npx serve ."
+  }
+}
